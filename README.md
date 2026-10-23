@@ -3,11 +3,11 @@
 **Геймифицированный фитнес-трекер** — превращай тренировки в очки роста, поднимай уровень и становись лучшей версией себя.
 
 > «Закономерность роста — маленький шаг каждый день даёт большую трансформацию.»
-
-![Статус](https://img.shields.io/badge/status-dev-yellow)
-![Технологии](https://img.shields.io/badge/tech-HTML/CSS/JS-blue)
-![Хранилище](https://img.shields.io/badge/storage-LocalStorage-green)
-![Лицензия](https://img.shields.io/badge/license-MIT-green)
+> 
+![Status](https://img.shields.io/badge/status-in_dev-yellow)
+![Tech](https://img.shields.io/badge/tech-HTML/CSS/JS-blue)
+![Storage](https://img.shields.io/badge/storage-LocalStorage-green)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 **Live-демо:** [посмотреть проект] (https://borealmaybed.github.io/lvl-it-up/)
 
