@@ -9,6 +9,8 @@
 ![Хранилище](https://img.shields.io/badge/storage-LocalStorage-green)
 ![Лицензия](https://img.shields.io/badge/license-MIT-green)
 
+**Live-демо:** [посмотреть проект] (https://borealmaybed.github.io/lvl-it-up/)
+
 ---
 
 ## 📸 Скриншоты
