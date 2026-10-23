@@ -4,7 +4,7 @@
 
 > «Закономерность роста — маленький шаг каждый день даёт большую трансформацию.»
 
-![Статус](https://img.shields.io/badge/status-в_разработке-yellow)
+![Статус](https://img.shields.io/badge/status-in%20dev-yellow)
 ![Технологии](https://img.shields.io/badge/stack-HTML%2FCSS%2FJS-blue)
 ![Хранилище](https://img.shields.io/badge/storage-LocalStorage-green)
 ![Лицензия](https://img.shields.io/badge/license-MIT-green)
