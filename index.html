@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVL IT UP! — вход и регистрация</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="page-auth">
+
+    <div class="stars" aria-hidden="true">
+      <span class="star star--large star--tr-large"></span>
+      <span class="star star--small star--tr-small"></span>
+
+      <span class="star star--large star--bl-large"></span>
+      <span class="star star--small star--bl-small"></span>
+    </div>
+
+
+    <main class="auth-shell">
+
+
+      <section class="hero">
+
+        <p class="eyebrow">
+          <span class="star-mini" aria-hidden="true"></span>
+          LVL IT UP!
+          <span class="star-mini" aria-hidden="true"></span>
+        </p>
+
+        <h1 class="title">
+          Вы когда-нибудь мечтали стать лучшей версией себя?
+        </h1>
+
+        <div class="motivation-block">
+          <p class="motivation">
+            Для этого тебе нужна лишь мотивация, и мы готовы тебе её дать.
+          </p>
+
+
+          <div class="line-group" aria-hidden="true">
+            <span class="line line--long"></span>
+            <span class="line line--short"></span>
+          </div>
+        </div>
+
+        <p class="start-line">
+          Начинай сегодня. Стань лучшим. Покажи себя.
+        </p>
+
+      </section>
+
+      <section class="auth-card" aria-label="Вход и регистрация">
+
+        <input class="auth-radio" type="radio" name="auth-mode" id="mode-login" checked>
+        <input class="auth-radio" type="radio" name="auth-mode" id="mode-register">
+
+        <div class="auth-tabs">
+          <label class="auth-tab" for="mode-login">Вход</label>
+          <label class="auth-tab" for="mode-register">Регистрация</label>
+          <span class="auth-tab-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="auth-forms">
+
+
+          <form class="form form--login" action="main.html" method="get">
+
+            <div class="field">
+              <label class="field-label" for="login-user">
+                Имя пользователя / Email
+              </label>
+
+              <div class="input-wrap">
+                <input class="input" id="login-user" name="login-user" type="text" placeholder="Имя пользователя/Email"
+                  autocomplete="username" required>
+                <span class="input-star" aria-hidden="true"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="login-pass">
+                Пароль
+              </label>
+
+              <div class="input-wrap">
+                <input class="input" id="login-pass" name="login-pass" type="password" placeholder="Пароль"
+                  autocomplete="current-password" required>
+                <span class="input-star" aria-hidden="true"></span>
+              </div>
+
+              <p class="field-hint">
+                Демо-режим: форма просто переходят на главную страницу.
+              </p>
+            </div>
+
+            <div class="form-extra">
+              <label class="checkbox">
+                <input type="checkbox" name="remember" checked>
+                <span class="checkbox-box" aria-hidden="true"></span>
+                <span class="checkbox-text">Запомнить меня</span>
+              </label>
+
+              <a class="link" href="#">
+                Забыли пароль?
+              </a>
+            </div>
+
+            <button class="btn btn--primary" type="submit">
+              <span>Войти</span>
+            </button>
+
+          </form>
+
+
+
+          <form class="form form--register" action="main.html" method="get">
+
+            <div class="field">
+              <label class="field-label" for="reg-name">
+                Имя
+              </label>
+
+              <div class="input-wrap">
+                <input class="input" id="reg-name" name="reg-name" type="text" placeholder="Как тебя зовут?"
+                  autocomplete="name" required>
+                <span class="input-star" aria-hidden="true"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="reg-email">
+                Email
+              </label>
+
+              <div class="input-wrap">
+                <input class="input" id="reg-email" name="reg-email" type="email" placeholder="you@example.com"
+                  autocomplete="email" required>
+                <span class="input-star" aria-hidden="true"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="reg-pass">
+                Пароль
+              </label>
+
+              <div class="input-wrap">
+                <input class="input" id="reg-pass" name="reg-pass" type="password" placeholder="Придумай пароль"
+                  autocomplete="new-password" minlength="8" required>
+                <span class="input-star" aria-hidden="true"></span>
+              </div>
+
+              <p class="field-hint">
+                Минимум 8 символов. Лучше использовать буквы, цифры и спецсимвол.
+              </p>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="reg-pass-repeat">
+                Повтори пароль
+              </label>
+
+              <div class="input-wrap">
+                <input class="input" id="reg-pass-repeat" name="reg-pass-repeat" type="password"
+                  placeholder="Повтори пароль" autocomplete="new-password" minlength="8" required>
+                <span class="input-star" aria-hidden="true"></span>
+              </div>
+
+              <p class="field-hint">
+                А тут я беспомощна.
+              </p>
+            </div>
+
+            <label class="checkbox checkbox--terms">
+              <input type="checkbox" name="terms" required>
+              <span class="checkbox-box" aria-hidden="true"></span>
+              <span class="checkbox-text">
+                Принимаю правила сервиса и готов фиксировать свой прогресс
+              </span>
+            </label>
+
+            <button class="btn btn--primary" type="submit">
+              <span>Создать аккаунт</span>
+            </button>
+
+          </form>
+
+        </div>
+
+      </section>
+
+
+      <p class="auth-note">
+        Я болванчик кстати тут всё криво
+      </p>
+
+    </main>
+
+  </div>
+  <script src="storage.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

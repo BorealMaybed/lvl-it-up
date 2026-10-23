@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVL IT UP! — личный кабинет</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cabinet.css">
+</head>
+
+<body class="cabinet-body">
+
+  <div class="cabinet-page">
+    <div class="decor-stars" aria-hidden="true">
+      <span class="decor-star decor-star--tr-large"></span>
+      <span class="decor-star decor-star--tr-small"></span>
+      <span class="decor-star decor-star--bl-large"></span>
+      <span class="decor-star decor-star--bl-small"></span>
+      <span class="decor-star decor-star--mid"></span>
+    </div>
+
+    <header class="topbar">
+
+      <a class="brand" href="index.html">
+        <span class="star-icon" aria-hidden="true"></span>
+        <span>LVL IT UP!</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav-link" href="main.html">
+          Главная
+        </a>
+        <a class="nav-link nav-link--active" href="cabinet.html" aria-current="page">
+          Личный кабинет
+        </a>
+        <a class="nav-link" href="index.html">
+          Выйти
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <label class="cab-btn cab-btn--small" for="tab-results">
+          <span class="star-icon" aria-hidden="true"></span>
+          Записать тренировку
+        </label>
+      </div>
+
+    </header>
+    <main class="cabinet-layout">
+      <aside class="profile-column" aria-label="Профиль пользователя">
+        <section class="panel profile-panel">
+
+          <p class="kicker">
+            <span class="star-icon" aria-hidden="true"></span>
+            Профиль
+          </p>
+
+          <div class="profile-top">
+            <div class="avatar-large" aria-hidden="true">АР</div>
+
+            <div class="profile-id">
+              <h1 class="profile-name">Алина Ростова</h1>
+              <span class="profile-handle">@alina_growth</span> · Уровень <span class="profile-level">7</span>
+            </div>
+          </div>
+
+          <div class="level-block">
+            <div class="level-line" role="progressbar" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"
+              aria-label="Прогресс до следующего уровня">
+              <span style="--level: 64%;"></span>
+            </div>
+            <p class="level-note">До <span class="next-level">8</span> уровня осталось <span
+                class="points-left">320</span> очков роста</p>
+          </div>
+
+          <dl class="profile-stats">
+            <div class="profile-stat">
+              Очки роста
+              <dd class="stat-points">1 280</dd>
+              Тренировок
+              <dd class="stat-workouts">36</dd>
+              Серия дней
+              <dd class="stat-streak">7</dd>
+              Место в рейтинге
+              <dd class="stat-rating">5</dd>
+            </div>
+          </dl>
+          <details class="profile-edit" id="profile-edit">
+            <summary class="cab-btn cab-btn--small cab-btn--ghost">
+              Редактировать профиль
+            </summary>
+
+            <form class="mini-form" action="#" method="get">
+              <div class="field">
+                <label class="field-label" for="profile-name-input">Имя</label>
+                <div class="input-wrap">
+                  <input class="input" id="profile-name-input" type="text" value="Алина Ростова">
+                  <span class="input-star" aria-hidden="true"></span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="field-label" for="profile-email-input">Email</label>
+                <div class="input-wrap">
+                  <input class="input" id="profile-email-input" type="email" value="alina@example.com">
+                  <span class="input-star" aria-hidden="true"></span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="field-label" for="profile-city-input">Город</label>
+                <div class="input-wrap">
+                  <input class="input" id="profile-city-input" type="text" placeholder="Например, Москва">
+                  <span class="input-star" aria-hidden="true"></span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="field-label" for="profile-goal-select">Главная цель</label>
+                <select class="select" id="profile-goal-select">
+                  <option>Набрать мышечную массу</option>
+                  <option selected>Стать выносливее</option>
+                  <option>Снизить вес</option>
+                  <option>Улучшить мобильность</option>
+                  <option>Просто быть в тонусе</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label class="field-label" for="profile-bio-input">О себе</label>
+                <textarea class="textarea" id="profile-bio-input"
+                  placeholder="Коротко расскажи, с чего начинаешь и чего хочешь достичь">Люблю короткие интенсивные тренировки и слежу за серией дней.</textarea>
+              </div>
+
+              <label class="checkbox">
+                <input type="checkbox" name="profile-notify" checked>
+                <span class="checkbox-box" aria-hidden="true"></span>
+                <span class="checkbox-text">Присылать напоминания о тренировках</span>
+              </label>
+
+              <div class="form-actions">
+                <button class="cab-btn cab-btn--small" type="submit">Сохранить</button>
+                <button class="cab-btn cab-btn--small cab-btn--ghost" type="reset">Отменить</button>
+              </div>
+
+              <p class="hint">
+                Это визуальный макет. Реальное сохранение профиля требует JS или backend-части.
+              </p>
+            </form>
+          </details>
+        </section>
+        <section class="panel achievements-mini-panel">
+
+          <div class="panel-head">
+            <h2 class="section-title">
+              <span class="star-icon" aria-hidden="true"></span>
+              Награды
+            </h2>
+            <a class="text-link" href="main.html">Все достижения</a>
+          </div>
+
+          <div class="achievement-list">
+
+            <article class="mini-achievement mini-achievement--unlocked">
+              <span class="achievement-icon" aria-hidden="true"></span>
+
+              <div class="achievement-body">
+                <h3 class="achievement-title">Первый шаг</h3>
+                <p class="achievement-desc italic">
+                  Заверши 1 тренировку и получи 50 очков.
+                </p>
+              </div>
+
+              <span class="badge">Получено</span>
+            </article>
+
+            <article class="mini-achievement mini-achievement--progress">
+              <span class="achievement-icon" aria-hidden="true"></span>
+
+              <div class="achievement-body">
+                <h3 class="achievement-title">Серия 7 дней</h3>
+                <p class="achievement-desc italic">
+                  Тренируйся 7 дней подряд и получи бонус 150 очков.
+                </p>
+
+                <div class="achievement-progress" role="progressbar" aria-valuenow="5" aria-valuemin="0"
+                  aria-valuemax="7" aria-label="Прогресс достижения: 5 из 7 дней">
+                  <span style="--done: 71%;"></span>
+                </div>
+              </div>
+
+              <span class="badge badge--muted">5/7</span>
+            </article>
+
+            <article class="mini-achievement mini-achievement--locked">
+              <span class="achievement-icon achievement-icon--muted" aria-hidden="true"></span>
+
+              <div class="achievement-body">
+                <h3 class="achievement-title">Железная неделя</h3>
+                <p class="achievement-desc italic">
+                  Выполни 10 тренировок за неделю.
+                </p>
+              </div>
+
+              <span class="badge badge--muted">Заблокировано</span>
+            </article>
+
+          </div>
+
+        </section>
+
+      </aside>
+      <section class="content-column">
+
+        <div class="cabinet-tabs">
+
+          <input class="cab-radio" type="radio" name="cabinet-tab" id="tab-workouts" checked>
+          <input class="cab-radio" type="radio" name="cabinet-tab" id="tab-exercises">
+          <input class="cab-radio" type="radio" name="cabinet-tab" id="tab-results">
+          <input class="cab-radio" type="radio" name="cabinet-tab" id="tab-history">
+          <nav class="tab-nav" aria-label="Разделы личного кабинета">
+            <label class="tab-label" for="tab-workouts">
+              <span class="star-icon" aria-hidden="true"></span>
+              Тренировки
+            </label>
+
+            <label class="tab-label" for="tab-exercises">
+              <span class="star-icon" aria-hidden="true"></span>
+              Упражнения
+            </label>
+
+            <label class="tab-label" for="tab-results">
+              <span class="star-icon" aria-hidden="true"></span>
+              Результат
+            </label>
+
+            <label class="tab-label" for="tab-history">
+              <span class="star-icon" aria-hidden="true"></span>
+              История
+            </label>
+          </nav>
+          <div class="tab-panels">
+            <section class="tab-panel tab-panel--workouts" aria-label="Мои тренировки">
+              <div class="panel workouts-panel">
+
+                <div class="panel-head">
+                  <h2 class="section-title">
+                    <span class="star-icon" aria-hidden="true"></span>
+                    Мои тренировки
+                  </h2>
+                  <p class="section-note italic">Активные планы и шаблоны</p>
+                </div>
+
+                <div class="toolbar">
+                  <span class="chip-static">3 активных</span>
+                  <span class="chip-static">1 завершена на неделе</span>
+                  <span class="divider-vertical" aria-hidden="true"></span>
+                  <p class="hint">
+                    Создавай тренировки, редактируй их и добавляй упражнения из библиотеки.
+                  </p>
+                </div>
+
+                <div class="workout-list">
+
+                  <article class="workout-card" id="workout-strength">
+
+                    <header class="workout-card-head">
+                      <h3 class="workout-title">
+                        <span class="star-icon" aria-hidden="true"></span>
+                        Сила: верх тела
+                      </h3>
+                      <span class="badge">Активна</span>
+                    </header>
+
+                    <p class="workout-meta italic">
+                      4 упражнения · 45 мин · +180 очков за выполнение
+                    </p>
+
+                    <ul class="workout-exercises">
+                      <li>
+                        <span class="star-icon star-icon--small" aria-hidden="true"></span>
+                        Отжимания — 4×12
+                      </li>
+                      <li>
+                        <span class="star-icon star-icon--small" aria-hidden="true"></span>
+                        Тяга гантели в наклоне — 4×10
+                      </li>
+                      <li>
+                        <span class="star-icon star-icon--small" aria-hidden="true"></span>
+                        Жим сидя — 3×12
+                      </li>
+                      <li>
+                        <span class="star-icon star-icon--small" aria-hidden="true"></span>
+                        Планка — 3×45 сек
+                      </li>
+                    </ul>
+
+                    <div class="progress-mini" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100" aria-label="Готовность тренировки">
+                      <span style="--done: 75%;"></span>
+                    </div>
+
+                    <div class="card-actions">
+
+                      <details class="action-details">
+                        <summary class="cab-btn cab-btn--small">
+                          Редактировать
+                        </summary>
+
+                        <form class="inline-form" action="#" method="get">
+                          <div class="field">
+                            <label class="field-label" for="edit-title-1">Название</label>
+                            <div class="input-wrap">
+                              <input class="input" id="edit-title-1" type="text" value="Сила: верх тела">
+                              <span class="input-star" aria-hidden="true"></span>
+                            </div>
+                          </div>
+
+                          <div class="inline-fields">
+                            <div class="field">
+                              <label class="field-label" for="edit-focus-1">Фокус</label>
+                              <select class="select" id="edit-focus-1">
+                                <option selected>Верх тела</option>
+                                <option>Ноги</option>
+                                <option>Кор</option>
+                                <option>Всё тело</option>
+                              </select>
+                            </div>
+
+                            <div class="field">
+                              <label class="field-label" for="edit-duration-1">Минуты</label>
+                              <input class="input" id="edit-duration-1" type="number" min="10" max="180" value="45">
+                            </div>
+
+                            <div class="field">
+                              <label class="field-label" for="edit-points-1">Очки</label>
+                              <input class="input" id="edit-points-1" type="number" min="10" step="10" value="180">
+                            </div>
+                          </div>
+
+                          <div class="field">
+                            <label class="field-label" for="edit-desc-1">Описание</label>
+                            <textarea class="textarea" id="edit-desc-1">
+Классическая силовая тренировка для дома и зала. Подходит для среднего уровня.
+                            </textarea>
+                          </div>
+
+                          <div class="form-actions">
+                            <button class="cab-btn cab-btn--small" type="submit">Сохранить</button>
+                            <button class="cab-btn cab-btn--small cab-btn--ghost" type="reset">Отменить</button>
+                          </div>
+                        </form>
+                      </details>
+                      <details class="action-details">
+                        <summary class="cab-btn cab-btn--small cab-btn--ghost">
+                          Добавить упражнение
+                        </summary>
+
+                        <form class="inline-form add-exercise-form" action="#" method="get">
+                          <div class="field">
+                            <label class="field-label" for="quick-search-1">Упражнение</label>
+                            <div class="input-wrap">
+                              <input class="input" id="quick-search-1" type="search" list="exercise-suggestions"
+                                placeholder="Например, тяга, планка, присед">
+                              <span class="input-star" aria-hidden="true"></span>
+                            </div>
+                          </div>
+
+                          <datalist id="exercise-suggestions">
+                            <option value="Отжимания"></option>
+                            <option value="Приседания"></option>
+                            <option value="Планка"></option>
+                            <option value="Тяга гантели в наклоне"></option>
+                            <option value="Жим сидя"></option>
+                            <option value="Выпады"></option>
+                            <option value="Бёрпи"></option>
+                            <option value="Ягодичный мост"></option>
+                          </datalist>
+
+                          <div class="inline-fields">
+                            <div class="field">
+                              <label class="field-label" for="sets-1">Подходы</label>
+                              <input class="input" id="sets-1" type="number" min="1" value="3">
+                            </div>
+
+                            <div class="field">
+                              <label class="field-label" for="reps-1">Повторы</label>
+                              <input class="input" id="reps-1" type="text" value="10-12">
+                            </div>
+
+                            <div class="field">
+                              <label class="field-label" for="weight-1">Вес, кг</label>
+                              <input class="input" id="weight-1" type="text" placeholder="Необязательно">
+                            </div>
+                          </div>
+
+                          <div class="form-actions">
+                            <button class="cab-btn cab-btn--small" type="submit">
+                              <span class="star-icon" aria-hidden="true"></span>
+                              Добавить в тренировку
+                            </button>
+                          </div>
+
+                          <p class="hint">
+                            В демо-режиме упражнение не сохраняется: для реальной работы нужны JS или backend.
+                          </p>
+                        </form>
+                      </details>
+
+                    </div>
+
+                  </article>
+
+                  <article class="workout-card" id="workout-cardio">
+
+                    <header class="workout-card-head">
+                      <h3 class="workout-title">
+                        <span class="star-icon" aria-hidden="true"></span>
+                        Кардио: интервалы
+                      </h3>
+                      <span class="badge badge--muted">Черновик</span>
+                    </header>
+
+                    <p class="workout-meta italic">
+                      3 упражнения · 25 мин · +120 очков за выполнение
+                    </p>
+
+                    <ul class="workout-exercises">
+                      <li>
+                        <span class="star-icon star-icon--small" aria-hidden="true"></span>
+                        Бёрпи — 4×8
+                      </li>
+                      <li>
+                        <span class="star-icon star-icon--small" aria-hidden="true"></span>
+                        Прыжки на месте — 4×30 сек
+                      </li>
+                      <li>
+                        <span class="star-icon star-icon--small" aria-hidden="true"></span>
+                        Бег на месте — 4×45 сек
+                      </li>
+                    </ul>
+
+                    <div class="progress-mini" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                      aria-valuemax="100" aria-label="Готовность тренировки">
+                      <span style="--done: 45%;"></span>
+                    </div>
+
+                    <div class="card-actions">
+                      <details class="action-details">
+                        <summary class="cab-btn cab-btn--small">
+                          Редактировать
+                        </summary>
+
+                        <form class="inline-form" action="#" method="get">
+                          <div class="field">
+                            <label class="field-label" for="edit-title-2">Название</label>
+                            <div class="input-wrap">
+                              <input class="input" id="edit-title-2" type="text" value="Кардио: интервалы">
+                              <span class="input-star" aria-hidden="true"></span>
+                            </div>
+                          </div>
+
+                          <div class="inline-fields">
+                            <div class="field">
+                              <label class="field-label" for="edit-focus-2">Фокус</label>
+                              <select class="select" id="edit-focus-2">
+                                <option>Верх тела</option>
+                                <option selected>Кардио</option>
+                                <option>Ноги</option>
+                                <option>Всё тело</option>
+                              </select>
+                            </div>
+
+                            <div class="field">
+                              <label class="field-label" for="edit-duration-2">Минуты</label>
+                              <input class="input" id="edit-duration-2" type="number" min="10" max="180" value="25">
+                            </div>
+
+                            <div class="field">
+                              <label class="field-label" for="edit-points-2">Очки</label>
+                              <input class="input" id="edit-points-2" type="number" min="10" step="10" value="120">
+                            </div>
+                          </div>
+
+                          <div class="form-actions">
+                            <button class="cab-btn cab-btn--small" type="submit">Сохранить</button>
+                          </div>
+                        </form>
+                      </details>
+
+                      <details class="action-details">
+                        <summary class="cab-btn cab-btn--small cab-btn--ghost">
+                          Добавить упражнение
+                        </summary>
+
+                        <form class="inline-form add-exercise-form" action="#" method="get">
+                          <div class="field">
+                            <label class="field-label" for="quick-search-2">Упражнение</label>
+                            <div class="input-wrap">
+                              <input class="input" id="quick-search-2" type="search" list="exercise-suggestions"
+                                placeholder="Найдите кардио-упражнение">
+                              <span class="input-star" aria-hidden="true"></span>
+                            </div>
+                          </div>
+
+                          <div class="inline-fields">
+                            <div class="field">
+                              <label class="field-label" for="sets-2">Подходы</label>
+                              <input class="input" id="sets-2" type="number" min="1" value="4">
+                            </div>
+
+                            <div class="field">
+                              <label class="field-label" for="reps-2">Время/повторы</label>
+                              <input class="input" id="reps-2" type="text" value="30 сек">
+                            </div>
+
+                            <div class="field">
+                              <label class="field-label" for="weight-2">Инвентарь</label>
+                              <input class="input" id="weight-2" type="text" placeholder="Скакалка, коврик">
+                            </div>
+                          </div>
+
+                          <div class="form-actions">
+                            <button class="cab-btn cab-btn--small" type="submit">Добавить</button>
+                          </div>
+                        </form>
+                      </details>
+                    </div>
+
+                  </article>
+
+                  <article class="workout-card workout-card--completed" id="workout-mobility">
+
+                    <header class="workout-card-head">
+                      <h3 class="workout-title">
+                        <span class="star-icon star-icon--muted" aria-hidden="true"></span>
+                        Мобильность и растяжка
+                      </h3>
+                      <span class="badge badge--muted">Завершена</span>
+                    </header>
+
+                    <p class="workout-meta italic">
+                      2 упражнения · 15 мин · +60 очков получено
+                    </p>
+
+                    <ul class="workout-exercises">
+                      <li>
+                        <span class="star-icon star-icon--small star-icon--muted" aria-hidden="true"></span>
+                        Кошка-корова — 2×10
+                      </li>
+                      <li>
+                        <span class="star-icon star-icon--small star-icon--muted" aria-hidden="true"></span>
+                        Растяжка бёдер — 2×40 сек
+                      </li>
+                    </ul>
+
+                    <div class="progress-mini" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                      aria-valuemax="100" aria-label="Тренировка завершена">
+                      <span style="--done: 100%;"></span>
+                    </div>
+
+                    <div class="card-actions">
+                      <a class="cab-btn cab-btn--small cab-btn--ghost" href="#tab-history-label">
+                        Смотреть результат
+                      </a>
+                    </div>
+
+                  </article>
+
+                </div>
+
+              </div>
+
+              <details class="panel create-workout-panel">
+                <summary class="panel-summary">
+                  <h2 class="section-title">
+                    <span class="star-icon" aria-hidden="true"></span>
+                    Создать тренировку
+                  </h2>
+                  <span class="toggle-star" aria-hidden="true"></span>
+                </summary>
+
+                <form class="create-form" action="#" method="get">
+
+                  <div class="form-grid">
+                    <div class="field">
+                      <label class="field-label" for="new-title">Название тренировки</label>
+                      <div class="input-wrap">
+                        <input class="input" id="new-title" type="text" placeholder="Например, Full Body Monday"
+                          required>
+                        <span class="input-star" aria-hidden="true"></span>
+                      </div>
+                    </div>
+
+                    <div class="field">
+                      <label class="field-label" for="new-type">Тип</label>
+                      <select class="select" id="new-type">
+                        <option>Сила</option>
+                        <option>Кардио</option>
+                        <option>Мобильность</option>
+                        <option>Йога</option>
+                        <option>Функциональная</option>
+                      </select>
+                    </div>
+
+                    <div class="field">
+                      <label class="field-label" for="new-duration">Длительность, мин</label>
+                      <input class="input" id="new-duration" type="number" min="10" max="180" value="45">
+                    </div>
+
+                    <div class="field">
+                      <label class="field-label" for="new-level">Сложность</label>
+                      <select class="select" id="new-level">
+                        <option>Новичок</option>
+                        <option selected>Средний</option>
+                        <option>Продвинутый</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <fieldset class="filter-set tag-set">
+                    <legend class="filter-legend italic">Теги</legend>
+
+                    <label class="chip-check">
+                      <input type="checkbox" name="tag" value="home" checked>
+                      <span>Дома</span>
+                    </label>
+
+                    <label class="chip-check">
+                      <input type="checkbox" name="tag" value="gym">
+                      <span>Зал</span>
+                    </label>
+
+                    <label class="chip-check">
+                      <input type="checkbox" name="tag" value="no-equipment" checked>
+                      <span>Без инвентаря</span>
+                    </label>
+
+                    <label class="chip-check">
+                      <input type="checkbox" name="tag" value="short">
+                      <span>До 30 минут</span>
+                    </label>
+
+                    <label class="chip-check">
+                      <input type="checkbox" name="tag" value="recovery">
+                      <span>Восстановление</span>
+                    </label>
+                  </fieldset>
+
+                  <div class="field">
+                    <label class="field-label" for="new-desc">Описание</label>
+                    <textarea class="textarea" id="new-desc"
+                      placeholder="Что входит в тренировку, какие цели, для кого подходит"></textarea>
+                  </div>
+
+                  <div class="form-actions">
+                    <button class="cab-btn" type="submit">
+                      <span class="star-icon" aria-hidden="true"></span>
+                      Создать тренировку
+                    </button>
+
+                    <button class="cab-btn cab-btn--ghost" type="reset">
+                      Очистить форму
+                    </button>
+                  </div>
+
+                  <p class="hint">
+                    После создания тренировка должна появиться в списке. В статичном макете это имитация интерфейса.
+                  </p>
+
+                </form>
+              </details>
+            </section>
+            <section class="tab-panel tab-panel--exercises" aria-label="Поиск упражнений">
+              <div class="panel search-panel">
+
+                <div class="panel-head">
+                  <h2 class="section-title">
+                    <span class="star-icon" aria-hidden="true"></span>
+                    Библиотека упражнений
+                  </h2>
+                  <p class="section-note italic">Видеоинструкции, анимации и быстрые добавления</p>
+                </div>
+
+                <form class="search-form" action="#" method="get">
+
+                  <div class="search-main">
+                    <div class="field search-field">
+                      <label class="sr-only" for="exercise-search">Поиск упражнений</label>
+                      <div class="input-wrap">
+                        <input class="input" id="exercise-search" type="search"
+                          placeholder="Название, группа мышц, инвентарь...">
+                        <span class="input-star" aria-hidden="true"></span>
+                      </div>
+                    </div>
+
+                    <button class="cab-btn" type="submit">
+                      <span class="star-icon" aria-hidden="true"></span>
+                      Найти
+                    </button>
+                  </div>
+
+                  <fieldset class="filter-set">
+                    <legend class="filter-legend italic">Категории</legend>
+
+                    <label class="chip-check">
+                      <input type="checkbox" name="category" value="strength" checked>
+                      <span>Сила</span>
+                    </label>
+
+                    <label class="chip-check">
+                      <input type="checkbox" name="category" value="cardio" checked>
+                      <span>Кардио</span>
+                    </label>
+
+                    <label class="chip-check">
+                      <input type="checkbox" name="category" value="mobility">
+                      <span>Мобильность</span>
+                    </label>
+
+                    <label class="chip-check">
+                      <input type="checkbox" name="category" value="core">
+                      <span>Кор</span>
+                    </label>
+
+                    <label class="chip-check">
+                      <input type="checkbox" name="category" value="legs">
+                      <span>Ноги</span>
+                    </label>
+
+                    <label class="chip-check">
+                      <input type="checkbox" name="category" value="home">
+                      <span>Дома</span>
+                    </label>
+                  </fieldset>
+
+                  <div class="search-extra">
+                    <div class="field">
+                      <label class="field-label" for="exercise-sort">Сортировка</label>
+                      <select class="select" id="exercise-sort">
+                        <option>По популярности</option>
+                        <option>По сложности</option>
+                        <option>По названию</option>
+                        <option>Быстрее всего</option>
+                      </select>
+                    </div>
+
+                    <div class="field">
+                      <label class="field-label" for="exercise-level">Уровень</label>
+                      <select class="select" id="exercise-level">
+                        <option>Любой</option>
+                        <option>Новичок</option>
+                        <option>Средний</option>
+                        <option>Продвинутый</option>
+                      </select>
+                    </div>
+                  </div>
+
+                </form>
+
+                <p class="hint">
+                  Поиск и фильтры в этом макете визуальные. Настоящая фильтрация требует JavaScript или
+                  backend-запросов.
+                </p>
+
+              </div>
+              <div class="exercise-grid">
+
+                <article class="exercise-card">
+                  <div class="exercise-media">
+                    <div class="pulse-ring"></div>
+
+                    <div class="exercise-video">
+                      <iframe src="https://rutube.ru/play/embed/ff46fa6927f5d532de1429dee83d3273/" frameborder="0"
+                        allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowfullscreen>
+                      </iframe>
+                    </div>
+
+                    <span class="media-label">
+                      <span class="star-icon star-icon--small"></span>
+                      Видео
+                    </span>
+                  </div>
+
+                  <div class="exercise-body">
+                    <h3 class="exercise-title">Отжимания</h3>
+                    <div class="exercise-tags">
+                      <span class="tag">Грудь</span>
+                      <span class="tag">Трицепс</span>
+                      <span class="tag">Дома</span>
+                    </div>
+                    <p class="exercise-desc">
+                      Базовое упражнение с собственным весом для верха тела.
+                    </p>
+                  </div>
+
+                  <details class="exercise-instruction">
+                    <summary>Инструкция и анимация</summary>
+                    <div class="instruction-body">
+                      <ol class="steps">
+                        <li>Примите упор лёжа, кисти чуть шире плеч.</li>
+                        <li>Напрягите пресс и держите корпус прямой линией.</li>
+                        <li>Опускайтесь, пока плечи не станут параллельны полу.</li>
+                        <li>Выжмите себя вверх без рывков и прогиба в пояснице.</li>
+                      </ol>
+                    </div>
+                  </details>
+
+                  <div class="exercise-footer">
+                    <div class="select-wrap compact">
+                      <label class="field-label" for="add-pushup">В тренировку</label>
+                      <select id="add-pushup" class="select select--small">
+                        <option>Сила: верх тела</option>
+                        <option>Кардио: интервалы</option>
+                        <option>Мобильность и растяжка</option>
+                        <option>Новая тренировка</option>
+                      </select>
+                    </div>
+                    <button class="cab-btn cab-btn--small">Добавить</button>
+                    <label class="fav-check">
+                      <input type="checkbox">
+                      <span class="star-fav"></span>
+                      В избранное
+                    </label>
+                  </div>
+                </article>
+                <article class="exercise-card">
+                  <div class="exercise-media">
+                    <div class="pulse-ring"></div>
+
+                    <div class="exercise-video">
+                      <iframe src="https://rutube.ru/play/embed/ecf3f6a6608483827cbd294aae32508f/" frameborder="0"
+                        allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowfullscreen>
+                      </iframe>
+                    </div>
+
+                    <span class="media-label">
+                      <span class="star-icon star-icon--small"></span>
+                      Видео
+                    </span>
+                  </div>
+
+                  <div class="exercise-body">
+                    <h3 class="exercise-title">Приседания</h3>
+                    <div class="exercise-tags">
+                      <span class="tag">Ноги</span>
+                      <span class="tag">Ягодицы</span>
+                      <span class="tag">База</span>
+                    </div>
+                    <p class="exercise-desc">
+                      Функциональное движение для нижней части тела и кора.
+                    </p>
+                  </div>
+
+                  <details class="exercise-instruction">
+                    <summary>Инструкция и анимация</summary>
+                    <div class="instruction-body">
+                      <ol class="steps">
+                        <li>Встань прямо, стопы на ширине таза или чуть шире.</li>
+                        <li>Отведи таз назад и начинай сгибать колени.</li>
+                        <li>Опускайся до параллели бедра с полом или чуть ниже.</li>
+                        <li>Дави пятками в пол и вернись в исходное положение.</li>
+                      </ol>
+                    </div>
+                  </details>
+
+                  <div class="exercise-footer">
+                    <div class="select-wrap compact">
+                      <label class="field-label" for="add-squat">В тренировку</label>
+                      <select id="add-squat" class="select select--small">
+                        <option>Сила: верх тела</option>
+                        <option>Кардио: интервалы</option>
+                        <option>Ноги и ягодицы</option>
+                        <option>Новая тренировка</option>
+                      </select>
+                    </div>
+                    <button class="cab-btn cab-btn--small">Добавить</button>
+                    <label class="fav-check">
+                      <input type="checkbox">
+                      <span class="star-fav"></span>
+                      В избранное
+                    </label>
+                  </div>
+                </article>
+                <article class="exercise-card">
+                  <div class="exercise-media">
+                    <div class="pulse-ring"></div>
+
+                    <div class="exercise-video">
+                      <iframe src="https://rutube.ru/play/embed/6bec9da943ab3685a2896261496ba6f9/" frameborder="0"
+                        allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowfullscreen>
+                      </iframe>
+                    </div>
+
+                    <span class="media-label">
+                      <span class="star-icon star-icon--small"></span>
+                      Видео
+                    </span>
+                  </div>
+
+                  <div class="exercise-body">
+                    <h3 class="exercise-title">Планка</h3>
+                    <div class="exercise-tags">
+                      <span class="tag">Кор</span>
+                      <span class="tag">Изометрия</span>
+                      <span class="tag">Дома</span>
+                    </div>
+                    <p class="exercise-desc">
+                      Статическое упражнение для укрепления мышц живота и спины.
+                    </p>
+                  </div>
+
+                  <details class="exercise-instruction">
+                    <summary>Инструкция и анимация</summary>
+                    <div class="instruction-body">
+                      <ol class="steps">
+                        <li>Встань в упор на предплечья и носки.</li>
+                        <li>Локти строго под плечами.</li>
+                        <li>Напряги пресс и ягодицы, не прогибай поясницу.</li>
+                        <li>Держи ровную линию от головы до пяток.</li>
+                      </ol>
+                    </div>
+                  </details>
+
+                  <div class="exercise-footer">
+                    <div class="select-wrap compact">
+                      <label class="field-label" for="add-plank">В тренировку</label>
+                      <select id="add-plank" class="select select--small">
+                        <option>Сила: верх тела</option>
+                        <option>Кардио: интервалы</option>
+                        <option>Мобильность и растяжка</option>
+                        <option>Новая тренировка</option>
+                      </select>
+                    </div>
+                    <button class="cab-btn cab-btn--small">Добавить</button>
+                    <label class="fav-check">
+                      <input type="checkbox">
+                      <span class="star-fav"></span>
+                      В избранное
+                    </label>
+                  </div>
+                </article>
+                <article class="exercise-card">
+                  <div class="exercise-media">
+                    <div class="pulse-ring"></div>
+
+                    <div class="exercise-video">
+                      <iframe src="https://rutube.ru/play/embed/d79f9cfd071a1e92c619fc1f1ab52d94/" frameborder="0"
+                        allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowfullscreen>
+                      </iframe>
+                    </div>
+
+                    <span class="media-label">
+                      <span class="star-icon star-icon--small"></span>
+                      Видео
+                    </span>
+                  </div>
+
+                  <div class="exercise-body">
+                    <h3 class="exercise-title">Бёрпи</h3>
+                    <div class="exercise-tags">
+                      <span class="tag">Кардио</span>
+                      <span class="tag">Всё тело</span>
+                      <span class="tag">HIIT</span>
+                    </div>
+                    <p class="exercise-desc">
+                      Взрывное упражнение для выносливости, координации и калорий.
+                    </p>
+                  </div>
+
+                  <details class="exercise-instruction">
+                    <summary>Инструкция и анимация</summary>
+                    <div class="instruction-body">
+                      <ol class="steps">
+                        <li>Из положения стоя присядь и поставь руки на пол.</li>
+                        <li>Выпрыгни ногами назад в планку.</li>
+                        <li>При желании выполни отжимание.</li>
+                        <li>Верни ноги к рукам и выпрыгни вверх.</li>
+                      </ol>
+                    </div>
+                  </details>
+
+                  <div class="exercise-footer">
+                    <div class="select-wrap compact">
+                      <label class="field-label" for="add-burpee">В тренировку</label>
+                      <select id="add-burpee" class="select select--small">
+                        <option>Сила: верх тела</option>
+                        <option>Кардио: интервалы</option>
+                        <option>Функциональная</option>
+                        <option>Новая тренировка</option>
+                      </select>
+                    </div>
+                    <button class="cab-btn cab-btn--small">Добавить</button>
+                    <label class="fav-check">
+                      <input type="checkbox">
+                      <span class="star-fav"></span>
+                      В избранное
+                    </label>
+                  </div>
+                </article>
+              </div>
+
+            </section>
+            <section class="tab-panel tab-panel--results" aria-label="Фиксация результата">
+
+              <div class="panel result-panel">
+
+                <div class="panel-head">
+                  <h2 class="section-title">
+                    <span class="star-icon" aria-hidden="true"></span>
+                    Записать результат
+                  </h2>
+                  <p class="section-note italic">Заполняй сразу после тренировки, пока помнишь детали</p>
+                </div>
+
+                <form class="result-form" action="#" method="get">
+
+                  <div class="form-grid">
+                    <div class="field">
+                      <label class="field-label" for="result-date">Дата</label>
+                      <input class="input" id="result-date" type="date" value="2026-10-23">
+                    </div>
+
+                    <div class="field">
+                      <label class="field-label" for="result-workout">Тренировка</label>
+                      <select class="select" id="result-workout">
+                        <option selected>Сила: верх тела</option>
+                        <option>Кардио: интервалы</option>
+                        <option>Мобильность и растяжка</option>
+                        <option>Свободная запись</option>
+                      </select>
+                    </div>
+
+                    <div class="field">
+                      <label class="field-label" for="result-type">Тип нагрузки</label>
+                      <select class="select" id="result-type">
+                        <option>Силовая</option>
+                        <option>Кардио</option>
+                        <option>Смешанная</option>
+                        <option>Восстановительная</option>
+                      </select>
+                    </div>
+
+                    <div class="field">
+                      <label class="field-label" for="result-duration">Длительность, мин</label>
+                      <input class="input" id="result-duration" type="number" min="1" max="300" value="45">
+                    </div>
+                  </div>
+
+                  <fieldset class="sets-fieldset">
+                    <legend>Подходы, повторы и вес</legend>
+                    <div class="sets-scroll">
+                      <div class="sets-inner">
+
+                        <div class="sets-header">
+                          <span>№</span>
+                          <span>Повторения</span>
+                          <span>Вес, кг</span>
+                          <span>Отдых, сек</span>
+                          <span aria-hidden="true"></span>
+                        </div>
+
+                        <div class="set-row">
+                          <span class="set-number">1</span>
+                          <input class="set-input" type="number" min="0" placeholder="12"
+                            aria-label="Повторения в подходе 1">
+                          <input class="set-input" type="number" min="0" step="0.5" placeholder="20"
+                            aria-label="Вес в подходе 1">
+                          <input class="set-input" type="number" min="0" placeholder="60"
+                            aria-label="Отдых в подходе 1">
+                          <span class="row-star" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="set-row">
+                          <span class="set-number">2</span>
+                          <input class="set-input" type="number" min="0" placeholder="10"
+                            aria-label="Повторения в подходе 2">
+                          <input class="set-input" type="number" min="0" step="0.5" placeholder="20"
+                            aria-label="Вес в подходе 2">
+                          <input class="set-input" type="number" min="0" placeholder="60"
+                            aria-label="Отдых в подходе 2">
+                          <span class="row-star" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="set-row">
+                          <span class="set-number">3</span>
+                          <input class="set-input" type="number" min="0" placeholder="8"
+                            aria-label="Повторения в подходе 3">
+                          <input class="set-input" type="number" min="0" step="0.5" placeholder="17.5"
+                            aria-label="Вес в подходе 3">
+                          <input class="set-input" type="number" min="0" placeholder="90"
+                            aria-label="Отдых в подходе 3">
+                          <span class="row-star" aria-hidden="true"></span>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="add-set-row">
+                      <button class="cab-btn cab-btn--small cab-btn--ghost" type="button" disabled>
+                        Добавить подход
+                      </button>
+
+                      <p class="hint">
+                        В реальном сервисе эта кнопка добавляла бы новую строку через JS.
+                      </p>
+                    </div>
+                  </fieldset>
+
+                  <div class="metric-cards">
+                    <div class="metric-card">
+                      <span class="metric-label italic">Очки роста</span>
+                      <strong class="metric-value">+220</strong>
+                    </div>
+
+                    <div class="metric-card">
+                      <span class="metric-label italic">Калории</span>
+                      <strong class="metric-value">410</strong>
+                    </div>
+
+                    <div class="metric-card">
+                      <span class="metric-label italic">Средний пульс</span>
+                      <strong class="metric-value">138</strong>
+                    </div>
+
+                    <div class="metric-card">
+                      <span class="metric-label italic">Серия дней</span>
+                      <strong class="metric-value">7</strong>
+                    </div>
+                  </div>
+
+                  <div class="form-grid">
+                    <div class="field">
+                      <label class="field-label" for="result-calories">Калории</label>
+                      <input class="input" id="result-calories" type="number" min="0" placeholder="Например, 410">
+                    </div>
+
+                    <div class="field">
+                      <label class="field-label" for="result-pulse">Средний пульс</label>
+                      <input class="input" id="result-pulse" type="number" min="0" placeholder="Например, 138">
+                    </div>
+
+                    <div class="field">
+                      <label class="field-label" for="result-feeling">Самочувствие</label>
+                      <select class="select" id="result-feeling">
+                        <option>Отлично</option>
+                        <option selected>Хорошо</option>
+                        <option>Нормально</option>
+                        <option>Устал</option>
+                        <option>Перегруз</option>
+                      </select>
+                    </div>
+
+                    <div class="field">
+                      <label class="field-label" for="result-technique">Техника, 1–10</label>
+                      <input class="input" id="result-technique" type="number" min="1" max="10" value="8">
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label class="field-label" for="result-notes">Заметки</label>
+                    <textarea class="textarea" id="result-notes"
+                      placeholder="Что получилось, что было тяжело, какие ощущения, что улучшить в следующий раз"></textarea>
+                  </div>
+
+                  <div class="form-actions">
+                    <button class="cab-btn" type="submit">
+                      <span class="star-icon" aria-hidden="true"></span>
+                      Зафиксировать результат
+                    </button>
+
+                    <button class="cab-btn cab-btn--ghost" type="submit" name="save" value="draft">
+                      Сохранить черновик
+                    </button>
+                  </div>
+
+                  <p class="hint">
+                    Это фронтенд-макет. Для реального сохранения результатов нужен JS и серверная часть.
+                  </p>
+
+                </form>
+
+              </div>
+
+            </section>
+            <section class="tab-panel tab-panel--history" aria-label="История занятий">
+
+              <div class="panel history-panel" id="tab-history-label">
+
+                <div class="panel-head">
+                  <h2 class="section-title">
+                    <span class="star-icon" aria-hidden="true"></span>
+                    История занятий
+                  </h2>
+                  <p class="section-note italic">Все зафиксированные тренировки и динамика</p>
+                </div>
+
+                <form class="history-filters" action="#" method="get">
+                  <div class="field">
+                    <label class="field-label" for="from-date">С</label>
+                    <input class="input" id="from-date" type="date" value="2026-10-01">
+                  </div>
+
+                  <div class="field">
+                    <label class="field-label" for="to-date">По</label>
+                    <input class="input" id="to-date" type="date" value="2026-10-22">
+                  </div>
+
+                  <div class="field">
+                    <label class="field-label" for="history-type">Тип</label>
+                    <select class="select" id="history-type">
+                      <option>Все тренировки</option>
+                      <option>Сила</option>
+                      <option>Кардио</option>
+                      <option>Мобильность</option>
+                      <option>Черновики</option>
+                    </select>
+                  </div>
+
+                  <button class="cab-btn cab-btn--small" type="submit">
+                    Показать
+                  </button>
+                </form>
+
+                <ol class="history-list">
+
+                  <li class="history-item">
+                    <time class="history-date" datetime="2026-10-22">22 окт</time>
+
+                    <article class="session-card">
+                      <div class="session-head">
+                        <h3 class="session-title">
+                          <span class="star-icon" aria-hidden="true"></span>
+                          Сила: верх тела
+                        </h3>
+                        <span class="badge">Сегодня</span>
+                      </div>
+
+                      <p class="session-meta italic">
+                        45 мин · 4 упражнения · техника 8/10 · самочувствие хорошо
+                      </p>
+
+                      <div class="session-metrics">
+                        <span class="metric-pill"><strong>+220</strong> очков</span>
+                        <span class="metric-pill"><strong>410</strong> ккал</span>
+                        <span class="metric-pill">серия <strong>7</strong></span>
+                      </div>
+
+                      <details class="session-details">
+                        <summary>
+                          <span class="star-icon star-icon--small" aria-hidden="true"></span>
+                          Показать детали
+                        </summary>
+
+                        <div class="table-scroll">
+                          <table class="session-table">
+                            <thead>
+                              <tr>
+                                <th>Упражнение</th>
+                                <th>Подходы</th>
+                                <th>Результат</th>
+                                <th>Очки</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><strong>Отжимания</strong></td>
+                                <td>4</td>
+                                <td>12 / 10 / 10 / 8</td>
+                                <td>+60</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Тяга гантели</strong></td>
+                                <td>4</td>
+                                <td>10 × 20 кг</td>
+                                <td>+70</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Жим сидя</strong></td>
+                                <td>3</td>
+                                <td>12 × 17.5 кг</td>
+                                <td>+50</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Планка</strong></td>
+                                <td>3</td>
+                                <td>45 сек</td>
+                                <td>+40</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </details>
+                    </article>
+                  </li>
+
+
+                  <li class="history-item">
+                    <time class="history-date" datetime="2026-10-20">20 окт</time>
+
+                    <article class="session-card">
+                      <div class="session-head">
+                        <h3 class="session-title">
+                          <span class="star-icon" aria-hidden="true"></span>
+                          Кардио: интервалы
+                        </h3>
+                        <span class="badge badge--muted">Завершено</span>
+                      </div>
+
+                      <p class="session-meta italic">
+                        25 мин · 3 упражнения · техника 7/10 · самочувствие нормально
+                      </p>
+
+                      <div class="session-metrics">
+                        <span class="metric-pill"><strong>+120</strong> очков</span>
+                        <span class="metric-pill"><strong>290</strong> ккал</span>
+                        <span class="metric-pill">серия <strong>5</strong></span>
+                      </div>
+
+                      <details class="session-details">
+                        <summary>
+                          <span class="star-icon star-icon--small" aria-hidden="true"></span>
+                          Показать детали
+                        </summary>
+
+                        <div class="table-scroll">
+                          <table class="session-table">
+                            <thead>
+                              <tr>
+                                <th>Упражнение</th>
+                                <th>Подходы</th>
+                                <th>Результат</th>
+                                <th>Очки</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><strong>Бёрпи</strong></td>
+                                <td>4</td>
+                                <td>8 повторений</td>
+                                <td>+50</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Прыжки на месте</strong></td>
+                                <td>4</td>
+                                <td>30 сек</td>
+                                <td>+40</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Бег на месте</strong></td>
+                                <td>4</td>
+                                <td>45 сек</td>
+                                <td>+30</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </details>
+                    </article>
+                  </li>
+
+
+                  <li class="history-item">
+                    <time class="history-date" datetime="2026-10-18">18 окт</time>
+
+                    <article class="session-card">
+                      <div class="session-head">
+                        <h3 class="session-title">
+                          <span class="star-icon" aria-hidden="true"></span>
+                          Мобильность и растяжка
+                        </h3>
+                        <span class="badge badge--muted">Завершено</span>
+                      </div>
+
+                      <p class="session-meta italic">
+                        15 мин · 2 упражнения · восстановление после силовой
+                      </p>
+
+                      <div class="session-metrics">
+                        <span class="metric-pill"><strong>+60</strong> очков</span>
+                        <span class="metric-pill"><strong>90</strong> ккал</span>
+                        <span class="metric-pill">серия <strong>3</strong></span>
+                      </div>
+
+                      <details class="session-details">
+                        <summary>
+                          <span class="star-icon star-icon--small" aria-hidden="true"></span>
+                          Показать детали
+                        </summary>
+
+                        <div class="table-scroll">
+                          <table class="session-table">
+                            <thead>
+                              <tr>
+                                <th>Упражнение</th>
+                                <th>Подходы</th>
+                                <th>Результат</th>
+                                <th>Очки</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><strong>Кошка-корова</strong></td>
+                                <td>2</td>
+                                <td>10 повторений</td>
+                                <td>+30</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Растяжка бёдер</strong></td>
+                                <td>2</td>
+                                <td>40 сек</td>
+                                <td>+30</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </details>
+                    </article>
+                  </li>
+
+
+                  <li class="history-item">
+                    <time class="history-date" datetime="2026-10-15">15 окт</time>
+
+                    <article class="session-card session-card--draft">
+                      <div class="session-head">
+                        <h3 class="session-title">
+                          <span class="star-icon star-icon--muted" aria-hidden="true"></span>
+                          Черновик: ноги и кор
+                        </h3>
+                        <span class="badge badge--muted">Черновик</span>
+                      </div>
+
+                      <p class="session-meta italic">
+                        Не зафиксировано · можно продолжить позже
+                      </p>
+
+                      <div class="session-metrics">
+                        <span class="metric-pill">3 упражнения</span>
+                        <span class="metric-pill">预计 40 мин</span>
+                      </div>
+
+                      <div class="card-actions">
+                        <label class="cab-btn cab-btn--small" for="tab-results">
+                          Продолжить запись
+                        </label>
+                      </div>
+                    </article>
+                  </li>
+                </ol>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="dash-footer">
+      <span class="divider-line" aria-hidden="true"></span>
+      <p class="footer-text italic">
+        Личный кабинет — место, где прогресс становится видимым, а каждая тренировка приближает к цели.
+      </p>
+    </footer>
+  </div>
+  <script src="storage.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

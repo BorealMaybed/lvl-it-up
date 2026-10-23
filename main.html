@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVL IT UP! — главная</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="dashboard-body">
+
+  <div class="dashboard-page">
+
+    <div class="decor-stars" aria-hidden="true">
+      <span class="decor-star decor-star--tr-large"></span>
+      <span class="decor-star decor-star--tr-small"></span>
+      <span class="decor-star decor-star--bl-large"></span>
+      <span class="decor-star decor-star--bl-small"></span>
+      <span class="decor-star decor-star--mid"></span>
+    </div>
+
+    <header class="topbar">
+
+      <a class="brand" href="index.html">
+        <span class="star-icon" aria-hidden="true"></span>
+        <span>LVL IT UP!</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav-link nav-link--active" href="main.html" aria-current="page">
+          Главная
+        </a>
+        <a class="nav-link" href="cabinet.html">
+          Личный кабинет
+        </a>
+        <a class="nav-link" href="index.html">
+          Выйти
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="main-btn main-btn--ghost" href="cabinet.html">
+          <span class="star-icon" aria-hidden="true"></span>
+          В кабинет
+        </a>
+      </div>
+
+    </header>
+
+    <main class="dashboard">
+      <section class="summary" aria-label="Сводка спортивных результатов">
+        <div class="panel welcome-panel">
+
+          <p class="kicker">
+            <span class="star-icon" aria-hidden="true"></span>
+            Твой сезон
+          </p>
+
+          <h1 class="page-title">
+            Привет, Алина!
+          </h1>
+
+          <p class="lead-italic">
+            Каждая запись о тренировке — это очко роста.
+            Сегодня ты ближе к цели, чем вчера.
+          </p>
+
+          <div class="stats-grid">
+
+            <article class="stat-card">
+              <p class="stat-label">Очки роста</p>
+              <p class="stat-value">1 280</p>
+              <p class="stat-trend stat-trend--up">+120 за неделю</p>
+            </article>
+
+            <article class="stat-card">
+              <p class="stat-label">Тренировок</p>
+              <p class="stat-value">36</p>
+              <p class="stat-trend stat-trend--up">+5 за неделю</p>
+            </article>
+
+            <article class="stat-card">
+              <p class="stat-label">Серия дней</p>
+              <p class="stat-value">7</p>
+              <p class="stat-trend">лучшая серия: 12</p>
+            </article>
+
+            <article class="stat-card">
+              <p class="stat-label">Калории</p>
+              <p class="stat-value">18 420</p>
+              <p class="stat-trend stat-trend--up">+1 340 за неделю</p>
+            </article>
+
+          </div>
+
+        </div>
+
+        <div class="panel progress-panel">
+
+          <div class="panel-head">
+            <h2 class="section-title">
+              <span class="star-icon" aria-hidden="true"></span>
+              Динамика прогресса
+            </h2>
+            <p class="section-note">
+              Цель месяца: 2 000 очков
+            </p>
+          </div>
+
+          <div class="progress-content">
+
+            <div class="progress-ring" style="--progress: 64%;" role="progressbar" aria-valuenow="64" aria-valuemin="0"
+              aria-valuemax="100" aria-label="Прогресс месячной цели">
+              <div class="progress-inner">
+                <span class="progress-value">64%</span>
+                <span class="progress-caption">цели достигнуто</span>
+              </div>
+            </div>
+
+            <div class="chart">
+
+              <div class="chart-head">
+                <span class="chart-title">Активность за 7 дней</span>
+                <span class="chart-subtitle">
+                  чем выше столбец, тем сильнее тренировка
+                </span>
+              </div>
+
+              <div class="chart-bars" role="img"
+                aria-label="График активности за неделю: понедельник 45 процентов, вторник 70 процентов, среда 35 процентов, четверг 85 процентов, пятница 55 процентов, суббота 95 процентов, воскресенье 40 процентов">
+                <div class="bar-column">
+                  <span class="bar" style="--value: 45%;"></span>
+                  <span class="bar-label">Пн</span>
+                </div>
+
+                <div class="bar-column">
+                  <span class="bar" style="--value: 70%;"></span>
+                  <span class="bar-label">Вт</span>
+                </div>
+
+                <div class="bar-column">
+                  <span class="bar" style="--value: 35%;"></span>
+                  <span class="bar-label">Ср</span>
+                </div>
+
+                <div class="bar-column">
+                  <span class="bar" style="--value: 85%;"></span>
+                  <span class="bar-label">Чт</span>
+                </div>
+
+                <div class="bar-column">
+                  <span class="bar" style="--value: 55%;"></span>
+                  <span class="bar-label">Пт</span>
+                </div>
+
+                <div class="bar-column">
+                  <span class="bar" style="--value: 95%;"></span>
+                  <span class="bar-label">Сб</span>
+                </div>
+
+                <div class="bar-column">
+                  <span class="bar" style="--value: 40%;"></span>
+                  <span class="bar-label">Вс</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <aside class="side" aria-label="Достижения и рейтинг пользователей">
+
+        <section class="panel achievements-panel">
+
+          <div class="panel-head">
+            <h2 class="section-title">
+              <span class="star-icon" aria-hidden="true"></span>
+              Достижения
+            </h2>
+            <a class="text-link" href="cabinet.html">
+              Все награды
+            </a>
+          </div>
+
+          <div class="achievement-list">
+
+            <article class="achievement achievement--unlocked">
+              <span class="achievement-icon" aria-hidden="true"></span>
+
+              <div class="achievement-body">
+                <h3 class="achievement-title">Первый шаг</h3>
+                <p class="achievement-desc">
+                  Заверши 1 тренировку и получи 50 очков.
+                </p>
+              </div>
+
+              <span class="badge">Получено</span>
+            </article>
+
+
+            <article class="achievement achievement--progress">
+              <span class="achievement-icon" aria-hidden="true"></span>
+
+              <div class="achievement-body">
+                <h3 class="achievement-title">Серия 7 дней</h3>
+                <p class="achievement-desc">
+                  Тренируйся 7 дней подряд и получи бонус 150 очков.
+                </p>
+              </div>
+
+              <div class="achievement-progress" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="7"
+                aria-label="Прогресс достижения: 5 из 7 дней">
+                <span style="--done: 71%;"></span>
+              </div>
+
+              <span class="badge badge--muted">5/7</span>
+            </article>
+
+
+            <article class="achievement achievement--locked">
+              <span class="achievement-icon" aria-hidden="true"></span>
+
+              <div class="achievement-body">
+                <h3 class="achievement-title">Железная неделя</h3>
+                <p class="achievement-desc">
+                  Выполни 10 тренировок за неделю.
+                </p>
+              </div>
+
+              <span class="badge badge--muted">Заблокировано</span>
+            </article>
+
+          </div>
+
+        </section>
+
+        <section class="panel rating-panel">
+
+          <div class="panel-head">
+            <h2 class="section-title">
+              <span class="star-icon" aria-hidden="true"></span>
+              Общий рейтинг
+            </h2>
+            <p class="section-note">
+              Топ недели
+            </p>
+          </div>
+
+          <div class="motivator" aria-label="Мотивационная фраза">
+            <span>Каждая тренировка приближает тебя к топу.</span>
+            <span>Не сравнивай себя с другими. Сравнивай с вчера.</span>
+            <span>Дисциплина сегодня — свобода завтра.</span>
+            <span>Твой прогресс уже виден. Не останавливайся.</span>
+            <span>Лидеры не ждут мотивацию. Они создают её.</span>
+          </div>
+
+
+          <ol class="rating-list">
+
+            <li class="rating-item rating-item--top">
+              <span class="rank">1</span>
+              <span class="avatar" aria-hidden="true">МК</span>
+
+              <div class="user-info">
+                <p class="user-name">Марина К.</p>
+                <p class="user-meta">Серия 21 день · 14 тренировок</p>
+              </div>
+
+              <div class="score">
+                <span class="points-value">3 420</span>
+                <span class="points-label">очков</span>
+              </div>
+
+              <span class="trend trend--up" aria-label="поднялась на 2 позиции">
+                ▲ 2
+              </span>
+            </li>
+
+
+            <li class="rating-item rating-item--top">
+              <span class="rank">2</span>
+              <span class="avatar" aria-hidden="true">ДЛ</span>
+
+              <div class="user-info">
+                <p class="user-name">Дмитрий Л.</p>
+                <p class="user-meta">Серия 16 дней · 12 тренировок</p>
+              </div>
+
+              <div class="score">
+                <span class="points-value">2 980</span>
+                <span class="points-label">очков</span>
+              </div>
+
+              <span class="trend trend--up" aria-label="поднялся на 1 позицию">
+                ▲ 1
+              </span>
+            </li>
+
+
+            <li class="rating-item rating-item--top">
+              <span class="rank">3</span>
+              <span class="avatar" aria-hidden="true">СВ</span>
+
+              <div class="user-info">
+                <p class="user-name">София В.</p>
+                <p class="user-meta">Серия 9 дней · 10 тренировок</p>
+              </div>
+
+              <div class="score">
+                <span class="points-value">2 610</span>
+                <span class="points-label">очков</span>
+              </div>
+
+              <span class="trend trend--down" aria-label="опустилась на 1 позицию">
+                ▼ 1
+              </span>
+            </li>
+
+
+            <li class="rating-item">
+              <span class="rank">4</span>
+              <span class="avatar" aria-hidden="true">АР</span>
+
+              <div class="user-info">
+                <p class="user-name">Артём Р.</p>
+                <p class="user-meta">Серия 5 дней · 8 тренировок</p>
+              </div>
+
+              <div class="score">
+                <span class="points-value">1 890</span>
+                <span class="points-label">очков</span>
+              </div>
+
+              <span class="trend trend--up" aria-label="поднялся на 3 позиции">
+                ▲ 3
+              </span>
+            </li>
+
+
+            <li class="rating-item rating-item--me">
+              <span class="rank">5</span>
+              <span class="avatar" aria-hidden="true">АР</span>
+
+              <div class="user-info">
+                <p class="user-name">Алина Р. <span class="you-tag">(ты)</span></p>
+                <p class="user-meta">Серия 7 дней · 6 тренировок</p>
+              </div>
+
+              <div class="score">
+                <span class="points-value">1 280</span>
+                <span class="points-label">очков</span>
+              </div>
+
+              <span class="trend trend--up" aria-label="поднялась на 1 позицию">
+                ▲ 1
+              </span>
+            </li>
+
+          </ol>
+
+
+  </div>
+
+  <span class="trend trend--up" aria-label="поднялась на 1 позицию">
+    ▲ 1
+  </span>
+  </li>
+
+  </ol>
+
+
+  <div class="action-row">
+    <a class="main-btn" href="cabinet.html">
+      <span class="star-icon" aria-hidden="true"></span>
+      Зафиксировать тренировку
+    </a>
+
+    <a class="main-btn main-btn--ghost" href="cabinet.html">
+      Открыть личный кабинет
+    </a>
+  </div>
+
+  </section>
+
+  </aside>
+
+  </main>
+
+  <footer class="dash-footer">
+    <span class="divider-line" aria-hidden="true"></span>
+    <p class="footer-text">
+      Закономерность роста — маленький шаг каждый день даёт большую трансформацию.
+    </p>
+  </footer>
+
+  </div>
+  <script src="storage.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
